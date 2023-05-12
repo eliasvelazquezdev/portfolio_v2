@@ -6,16 +6,26 @@ html{
 
 body{
     font-family: 'Hind', sans-serif;
-    background-color: #202020;
+    /* background-color: #202020; */
 }
 
-footer{
+footer, .nav-aside{
+    height: 60px;
     background-color: #2a4f9d;
 }
 
 i{
     color: #2a4f9d;
 }
+
+a:visited{
+    color: #2a4f9d;
+}
+
+.nav-aside{
+    height: 40px;
+}
+
 
 .title{
     color: #2a4f9d;
@@ -24,7 +34,7 @@ i{
 
 /* width */
 ::-webkit-scrollbar {
-width: 5px;
+width: 3px;
 }
 
 /* Track */
