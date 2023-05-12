@@ -14,42 +14,59 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>Portfolio - esvdev</title>
 </head>
-<body class="text-light">
+<body id="body" class="text-light bg-dark">
     <header>
-        <!-- Presentación mobile -->
-        <div class="container d-md-none d-sm-block">
-            <div class="row mb-3">
-                <div class="col-12 navbar">
-                    <img class="img-fluid" src="./assets/img/banner.png" alt="">
-                </div>
-                <div class="col-12 mx-auto text-center">
-                    <img class="img-fluid mb-3" width="200px" src="./assets/img/elias_pic1.png" alt="">
-                    <h3>Elias Velazquez</h3>
-                    <h6 class="fst-italic">Backend developer</h6>
-                </div>
-                <div class="col-12 text-center d-flex flex-column">
-                    <a href="" download class="text-decoration-none link-light"><i class="fas fa-download me-2"></i>Descargar CV</a>
-                    <a href="#certificates" class="text-decoration-none link-light"><i class="fas fa-certificate me-2"></i>Certificados</a>
-                    <a href="#projects" class="text-decoration-none link-light"><i class="fas fa-briefcase me-2"></i>Proyectos</a>
-                    <a href="#contact" class="text-decoration-none link-light"><i class="fas fa-envelope me-2"></i>Contacto</a>
+        <!-- Navbar mobile -->
+        <nav>
+            <div class="navbar nav-aside mb-3 px-3 fs-5 d-md-none d-sm-block d-flex justify-content-between">
+                <span><i class="fas fa-language text-light me-3"></i></span>
+                <div class="form-check form-switch">
+                    <span><i class="fas fa-sun text-light"></i></span>
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
                 </div>
             </div>
-            <hr>
-        </div>
+        </nav>
     </header>
-
+        <!-- Presentación mobile -->
+    <div class="container d-md-none d-sm-block">
+        <div class="row mb-3">
+            <div class="col-12 mx-auto text-center">
+                <img class="img-fluid mt-3 mb-3" width="200px" src="./assets/img/elias_pic1.png" alt="">
+                <h3>Elias Velazquez</h3>
+                <h6 class="fst-italic">Backend developer</h6>
+            </div>
+            <div class="col-12 text-center d-flex flex-column">
+                <a href="" download class="general-link text-decoration-none link-light"><i class="fas fa-download me-2"></i>Descargar CV</a>
+                <a href="#certificates" class="general-link text-decoration-none link-light"><i class="fas fa-certificate me-2"></i>Certificados</a>
+                <a href="#projects" class="general-link text-decoration-none link-light"><i class="fas fa-briefcase me-2"></i>Proyectos</a>
+                <a href="#contact" class="general-link text-decoration-none link-light"><i class="fas fa-envelope me-2"></i>Contacto</a>
+            </div>
+        </div>
+        <hr>
+    </div>
+    
     <aside>
         <!-- Presentación desktop -->
-        <div class="container w-25 float-start vh-100 overflow-y-scroll d-md-block d-none">
+        <div class="container w-25 float-start vh-100 overflow-y-scroll overflow-x-hidden p-0 d-md-block d-none">
+            <!-- Navbar desktop -->
+            <nav>
+                <div class="navbar nav-aside mb-3 px-3 fs-5 d-flex justify-content-between">
+                    <span><i class="fas fa-language text-light me-3"></i></span>
+                    <div class="form-check form-switch">
+                        <span><i class="fas fa-sun text-light"></i></span>
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    </div>
+                </div>
+            </nav>
             <div class="row mt-3 mb-3">
                 <div class="col-12 mx-auto text-center">
                     <img class="img-fluid mb-3" width="180px" src="./assets/img/elias_pic1.png" alt="">
                     <h2>Elias Velazquez</h2>
                     <h6 class="fst-italic">Backend developer</h6>
                 </div>
-                <div class="col-12 text-center d-flex flex-column">
-                    <a href="" download class="text-decoration-none link-light"><i class="fas fa-download me-2"></i>Descargar CV</a>
-                    <a href="#contact-aside" class="text-decoration-none link-light"><i class="fas fa-envelope me-2"></i>Contacto</a>
+                <div class="col-12 text-center d-flex flex-row justify-content-evenly">
+                    <a href="" download class="general-link text-decoration-none link-light"><i class="fas fa-download me-2"></i>Descargar CV</a>
+                    <a href="#contact-aside" class="general-link text-decoration-none link-light"><i class="fas fa-envelope me-2"></i>Contacto</a>
                 </div>
             </div>
             <hr>
@@ -115,7 +132,7 @@
             </section>
             <hr>
             <!-- Contacto -->
-            <section id="contact-aside" class="mb-3">
+            <section id="contact-aside" class="mb-3 px-3">
                 <div class="row mb-3">
                     <div class="col-12">
                         <h4 class="text-center title">Contacto</h4>
@@ -126,7 +143,7 @@
                         <a href="https://www.linkedin.com/in/eliassvelazquez/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
-                <form action="https://formsubmit.co/evelazquez2604@gmail.com" method="post" id="form" class="mx-auto" style="margin-bottom: 6rem;" >
+                <form action="https://formsubmit.co/evelazquez2604@gmail.com" method="post" id="form" class="mx-auto px-3" style="margin-bottom: 3rem;" >
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_subject" value="Nuevo mensaje desde portfolio!">
                     <input type="hidden" name="_next" value="./thanks.html">
@@ -136,12 +153,11 @@
                             <div class="col-sm-12 ">
                                 <div class="form-floating mb-3">
                                     <input type="text"
-                                    class="form-control text-light"
+                                    class="form-control text-light bg-dark"
                                     id="floatingNameInput"
                                     name="name"
                                     aria-describedby="name-help"
                                     placeholder="Nombre"
-                                    style="background-color: #202020;"
                                     required>
                                     <label for="floatingNameInput">Nombre</label>
                                 </div>
@@ -152,12 +168,11 @@
                             <div class="col-sm-12">
                                 <div class="form-floating mb-3">
                                     <input type="text"
-                                    class="form-control text-light"
+                                    class="form-control text-light bg-dark"
                                     id="floatingSubjectInput"
                                     name="subject"
                                     aria-describedby="subject-help"
                                     placeholder="Asunto"
-                                    style="background-color: #202020;"
                                     required>
                                     <label for="floatingSubjectInput">Asunto</label>
                                 </div>
@@ -169,12 +184,11 @@
                         <div class="col-sm-12">
                             <div class="form-floating mb-3">
                                 <input type="email"
-                                class="form-control text-light"
+                                class="form-control text-light bg-dark"
                                 id="floatingEmail"
                                 placeholder="E-mail"
                                 aria-describedby="email-help"
                                 name="email"
-                                style="background-color: #202020;"
                                 required>
                                 <label for="floatingEmail">Correo electrónico</label>
                             </div>
@@ -185,14 +199,13 @@
                         <div class="col-sm-12">
                             <div class="form-floating mb-3">
                                 <textarea
-                                class="form-control text-light"
                                 id="floatingTextArea"
+                                class="form-control text-light bg-dark"
                                 placeholder="Mensaje"
                                 aria-describedby="msg-help"
                                 name="message"
-                                style="background-color: #202020; height: 100px;"
-                                required>
-                                </textarea>
+                                style= "height: 100px;"
+                                required></textarea>
                                 <label for="floatingTextArea">Mensaje</label>
                             </div>
                         </div>
@@ -226,22 +239,30 @@
                     <div class="col-6">
                         <h6 class="fst-italic">Frontend</h6>
                         <div class="d-flex flex-column me-2" style="color: #2a4f9d;">
-                            <span class="text-light"><i class="fab fa-html5 me-2"></i>HTML5</span>
-                            <span class="text-light"><i class="fab fa-css3-alt me-2"></i>CSS3</span>
-                            <span class="text-light"><i class="fab fa-bootstrap me-2"></i>Bootstrap 5</span>
-                            <span class="text-light"><i class="fab fa-js me-2"></i>JavaScript</span>
+                            <span class="tech-skill-icon text-light">
+                                <i class="fab fa-html5 me-2"></i>HTML5
+                            </span>
+                            <span class="tech-skill-icon text-light">
+                                <i class="fab fa-css3-alt me-2"></i>CSS3
+                            </span>
+                            <span class="tech-skill-icon text-light">
+                                <i class="fab fa-bootstrap me-2"></i>Bootstrap 5
+                            </span>
+                            <span class="tech-skill-icon text-light">
+                                <i class="fab fa-js me-2"></i>JavaScript
+                            </span>
                         </div>
                     </div>
                     <div class="col-6">
                         <h6 class="fst-italic">Backend</h6>
                         <div class="d-flex flex-column me-2">
-                            <span class="text-light">
+                            <span class="tech-skill-icon text-light">
                                 <i class="fab fa-python me-2"></i>Python
                             </span>
-                            <span class="text-light">
+                            <span class="tech-skill-icon text-light">
                                 <i class="devicon-django-plain me-2"></i>Django
                             </span>
-                            <span class="text-light">
+                            <span class="tech-skill-icon text-light">
                                 <i class="devicon-mysql-plain me-2"></i>MySQL
                             </span>
                         </div>
@@ -249,13 +270,13 @@
                     <div class="col-6 mt-3">
                         <h6 class="fst-italic">Otros</h6>
                         <div class="d-flex flex-column">
-                            <span class="text-light">
+                            <span class="tech-skill-icon text-light">
                                 <i class="fab fa-git me-2"></i>Git
                             </span>
-                            <span class="text-light">
+                            <span class="tech-skill-icon text-light">
                                 <i class="fab fa-github me-2"></i>GitHub
                             </span>
-                            <span class="text-light">
+                            <span class="tech-skill-icon text-light">
                                 <i class="fab fa-trello me-2"></i>Trello
                             </span>
                         </div>
@@ -263,13 +284,13 @@
                     <div class="col-6 mt-3">
                         <h6 class="fst-italic">En la mira</h6>
                         <div class="d-flex flex-column">
-                            <span class="text-light">
+                            <span class="tech-skill-icon text-light">
                                 <i class="devicon-flask-original me-2"></i>Flask
                             </span>
-                            <span class="text-light">
+                            <span class="tech-skill-icon text-light">
                                 <i class="devicon-fastapi-plain me-2"></i>FastAPI
                             </span>
-                            <span class="text-light">
+                            <span class="tech-skill-icon text-light">
                                 <i class="devicon-docker-plain me-2"></i>Docker
                             </span>
                         </div>
@@ -301,7 +322,7 @@
                         <p class="mb-0 fw-lighter fst-italic">Enero 2023 - Abril 2023</p>
                         <h4>Django Web Framework</h4>
                         <h6>Coursera</h6>
-                        <a href="https://www.coursera.org/account/accomplishments/certificate/MSXJQ26VEVZP" target="_blank" class="text-decoration-none link-light"><i class="fas fa-certificate me-2"></i>Ver certificado</a>
+                        <a href="https://www.coursera.org/account/accomplishments/certificate/MSXJQ26VEVZP" target="_blank" class="general-link text-decoration-none link-light"><i class="fas fa-certificate me-2"></i>Ver certificado</a>
                     </div>
                 </div>
 
@@ -311,7 +332,7 @@
                         <p class="mb-0 fw-lighter fst-italic">Febrero 2023 - Marzo 2023</p>
                         <h5>Desarrollo web en Python & Django</h5>
                         <h6>Educacion IT</h6>
-                        <a href="https://api.educacionit.com/pdf/certificados/elias-velazquez-669615/61878" target="_blank" class="text-decoration-none link-light"><i class="fas fa-certificate me-2"></i>Ver certificado</a>
+                        <a href="https://api.educacionit.com/pdf/certificados/elias-velazquez-669615/61878" target="_blank" class="general-link text-decoration-none link-light"><i class="fas fa-certificate me-2"></i>Ver certificado</a>
                     </div>
                 </div>
 
@@ -321,7 +342,7 @@
                         <p class="mb-0 fw-lighter fst-italic">Abril 2022 - Octubre 2022</p>
                         <h5>Bootcamp Desarrollo web Full Stack</h5>
                         <h6>Fundación Pescar - Educacion IT</h6>
-                        <a href="" target="_blank" class="text-decoration-none link-light"><i class="fas fa-certificate me-2"></i>Ver certificado</a>
+                        <a href="" target="_blank" class="general-link text-decoration-none link-light"><i class="fas fa-certificate me-2"></i>Ver certificado</a>
                     </div>
                 </div>
 
@@ -331,11 +352,11 @@
                         <p class="mb-0 fw-lighter fst-italic">Junio 2021 - Enero 2023</p>
                         <h4>Curso Python 3</h4>
                         <h6>Udemy</h6>
-                        <a href="https://drive.google.com/file/d/10OVu9F5WPJW5zyG4pfhomU0iq_SRTRIM/view?usp=share_link" target="_blank" class="text-decoration-none link-light"><i class="fas fa-certificate me-2"></i>Ver certificado</a>
+                        <a href="https://drive.google.com/file/d/10OVu9F5WPJW5zyG4pfhomU0iq_SRTRIM/view?usp=share_link" target="_blank" class="general-link text-decoration-none link-light"><i class="fas fa-certificate me-2"></i>Ver certificado</a>
                     </div>
                 </div>
 
-                <p class="fw-lighter">Te invito a ver el resto de mis certificados haciendo click <a href="https://drive.google.com/drive/folders/1BIe74yPZU3P4QvxfE1Ir1xEZRFm9V1k_?usp=share_link" target="_blank" class="text-decoration-none link-primary">aquí</a>.</p>
+                <p class="fw-lighter">Te invito a ver el resto de mis certificados haciendo click <a href="https://drive.google.com/drive/folders/1BIe74yPZU3P4QvxfE1Ir1xEZRFm9V1k_?usp=share_link" target="_blank" class="general-link text-decoration-none link-primary">aquí</a>.</p>
             </section>
 
             <hr>
@@ -367,7 +388,7 @@
             <hr>
 
             <!-- Contacto -->
-            <section id="contact" style="margin-bottom: 8rem;">
+            <section id="contact" style="margin-bottom: 3rem;">
                 <div class="row mb-3">
                     <div class="col-12">
                         <h2 class="text-center title">Contacto</h2>
@@ -390,12 +411,11 @@
                             <div class="col-sm-12 ">
                                 <div class="form-floating mb-3">
                                     <input type="text"
-                                    class="form-control text-light"
+                                    class="form-control text-light bg-dark"
                                     id="floatingNameInput"
                                     name="name"
                                     aria-describedby="name-help"
                                     placeholder="Nombre" 
-                                    style="background-color: #202020;"
                                     required>
                                     <label for="floatingNameInput">Nombre</label>
                                 </div>
@@ -406,12 +426,11 @@
                             <div class="col-sm-12">
                                 <div class="form-floating mb-3">
                                     <input type="text" 
-                                    class="form-control text-light" 
+                                    class="form-control text-light bg-dark" 
                                     id="floatingSubjectInput" 
                                     name="subject" 
                                     aria-describedby="subject-help" 
                                     placeholder="Asunto"
-                                    style="background-color: #202020;"
                                     required>
                                     <label for="floatingSubjectInput">Asunto</label>
                                 </div>
@@ -424,12 +443,11 @@
                         <div class="col-sm-12">
                             <div class="form-floating mb-3">
                                 <input type="email" 
-                                class="form-control text-light" 
+                                class="form-control text-light bg-dark" 
                                 id="floatingEmail" 
                                 placeholder="E-mail"
                                 aria-describedby="email-help" 
-                                name="email" 
-                                style="background-color: #202020;"
+                                name="email"
                                 required>
                                 <label for="floatingEmail">Correo electrónico</label>
                             </div>
@@ -441,14 +459,13 @@
                         <div class="col-sm-12">
                             <div class="form-floating mb-3">
                                 <textarea 
-                                class="form-control text-light" 
+                                class="form-control text-light bg-dark" 
                                 id="floatingTextArea" 
                                 placeholder="Mensaje" 
                                 aria-describedby="msg-help" 
                                 name="message"
-                                style="background-color: #202020; height: 100px;"
-                                required>
-                                </textarea>
+                                style="height: 100px;"
+                                required></textarea>
                                 <label for="floatingTextArea">Mensaje</label>
                             </div>
                         </div>
@@ -463,7 +480,7 @@
         <!-- Cuerpo desktop -->
         <div class="container-fluid w-75 vh-100 overflow-y-scroll d-md-block d-none">
             <div class="row">
-                <div class="col-12 navbar">
+                <div class="col-12 navbar mt-0 pt-0">
                     <img class="img-fluid" src="./assets/img/banner.png" alt="">
                 </div>
                 <div class="col-12">
@@ -485,14 +502,14 @@
                         <p class="mb-0 fw-lighter fst-italic">Enero 2023 - Abril 2023</p>
                         <h4>Django Web Framework</h4>
                         <h6>Coursera</h6>
-                        <a href="https://www.coursera.org/account/accomplishments/certificate/MSXJQ26VEVZP" target="_blank" class="text-decoration-none link-light"><i class="fas fa-certificate me-2"></i>Ver certificado</a>
+                        <a href="https://www.coursera.org/account/accomplishments/certificate/MSXJQ26VEVZP" target="_blank" class="general-link text-decoration-none link-light"><i class="fas fa-certificate me-2"></i>Ver certificado</a>
                     </div>
 
                     <div class="col-6">
                         <p class="mb-0 fw-lighter fst-italic">Febrero 2023 - Marzo 2023</p>
                         <h4>Desarrollo web en Python & Django</h4>
                         <h6>Educacion IT</h6>
-                        <a href="https://api.educacionit.com/pdf/certificados/elias-velazquez-669615/61878" target="_blank" class="text-decoration-none link-light"><i class="fas fa-certificate me-2"></i>Ver certificado</a>
+                        <a href="https://api.educacionit.com/pdf/certificados/elias-velazquez-669615/61878" target="_blank" class="general-link text-decoration-none link-light"><i class="fas fa-certificate me-2"></i>Ver certificado</a>
                     </div>
                 </div>
 
@@ -502,17 +519,17 @@
                         <p class="mb-0 fw-lighter fst-italic">Abril 2022 - Octubre 2022</p>
                         <h4>Bootcamp Desarrollo web Full Stack</h4>
                         <h6>Fundación Pescar - Educacion IT</h6>
-                        <a href="" target="_blank" class="text-decoration-none link-light"><i class="fas fa-certificate me-2"></i>Ver certificado</a>
+                        <a href="" target="_blank" class="general-link text-decoration-none link-light"><i class="fas fa-certificate me-2"></i>Ver certificado</a>
                     </div>
 
                     <div class="col-6">
                         <p class="mb-0 fw-lighter fst-italic">Junio 2021 - Enero 2023</p>
                         <h4>Curso Python 3</h4>
                         <h6>Udemy</h6>
-                        <a href="https://drive.google.com/file/d/10OVu9F5WPJW5zyG4pfhomU0iq_SRTRIM/view?usp=share_link" target="_blank" class="text-decoration-none link-light"><i class="fas fa-certificate me-2"></i>Ver certificado</a>
+                        <a href="https://drive.google.com/file/d/10OVu9F5WPJW5zyG4pfhomU0iq_SRTRIM/view?usp=share_link" target="_blank" class="general-link text-decoration-none link-light"><i class="fas fa-certificate me-2"></i>Ver certificado</a>
                     </div>
                 </div>
-                <p class="fw-lighter">Te invito a ver el resto de mis certificados haciendo click <a href="https://drive.google.com/drive/folders/1BIe74yPZU3P4QvxfE1Ir1xEZRFm9V1k_?usp=share_link" target="_blank" class="text-decoration-none link-primary">aquí</a>.</p>
+                <p class="fw-lighter">Te invito a ver el resto de mis certificados haciendo click <a href="https://drive.google.com/drive/folders/1BIe74yPZU3P4QvxfE1Ir1xEZRFm9V1k_?usp=share_link" target="_blank" class="general-link text-decoration-none link-light">aquí</a>.</p>
 
             </section>
 
@@ -573,20 +590,21 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur facere non tempore facilis nostrum unde, illum laboriosam hic, sed quo alias eaque, totam expedita exercitationem at dolores quidem debitis doloremque?</p>
 
                 <div class="col-12 d-flex flex-column">
-                    <a href="#" target="_blank" class="text-decoration-none text-light mb-2"><i class="fas fa-arrow-up-right-from-square me-2"></i>Deploy</a>
-                    <a href="#" target="_blank" class="text-decoration-none text-light"><i class="fab fa-github me-2"></i>Repositorio</a>
+                    <a href="#" target="_blank" class="general-link text-decoration-none link-light mb-2"><i class="fas fa-arrow-up-right-from-square me-2"></i>Deploy</a>
+                    <a href="#" target="_blank" class="general-link text-decoration-none link-light"><i class="fab fa-github me-2"></i>Repositorio</a>
                 </div>
             </div>
         </div>
     </aside>
 
-    <footer class="navbar container-fluid w-100 position-fixed start-0 bottom-0">
+    <footer class="navbar container-fluid w-100 d-md-none d-sm-block p-0">
         <div class="w-100">
-            <p class="lead fs-6 text-center mb-1">Elias Velazquez - 2023</p>
+            <p class="lead fs-6 text-center mb-0 text-light">Elias Velazquez - 2023</p>
           
             <div class="text-center fs-5 d-flex justify-content-center">
               <a href="https://twitter.com/esvdev" target="_blank"><i class="fab fa-twitter text-light me-3 "></i></a>
-              <a href="https://www.linkedin.com/in/eliassvelazquez/" target="_blank"><i class="fab fa-linkedin text-light"></i></a> 
+              <a href="https://www.linkedin.com/in/eliassvelazquez/" target="_blank"><i class="fab fa-linkedin text-light me-3"></i></a> 
+              <a href="#top"><i class="fas fa-arrow-up text-light"></i></a> 
             </div>
         </div>
     </footer>
