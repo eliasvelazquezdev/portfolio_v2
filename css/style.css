@@ -4,8 +4,7 @@ html{
 
 body{
     font-family: 'Inter', sans-serif;
-    background-image: url(/assets/img/background-dark.png);
-    background-size: cover;   
+      
 }
 
 footer, .nav-aside{
@@ -14,6 +13,16 @@ footer, .nav-aside{
 
 a:visited{
     color: #2a4f9d;
+}
+
+.background-dark-mode{
+    background-image: url(/assets/img/background-dark.png);
+    background-size: cover; 
+}
+
+.background-light-mode{
+    background-image: url(/assets/img/background-light.png);
+    background-size: cover; 
 }
 
 .title{
@@ -36,8 +45,25 @@ a:visited{
     height: 450px;
 }
 
+.skill-card:hover {
+    box-shadow:0px 0px 30px rgb(63, 109, 209);
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.3s ease-in;
+}
+
 .certificates-card{
     background-color: rgba(22, 20, 21, 0.8);
+}
+
+
+.certificates-card:hover{
+    box-shadow: inset 5px 0 5px -3px rgba(63, 109, 209);
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 #explore-icon{
@@ -45,13 +71,13 @@ a:visited{
 }
 
 #skill-card-front{
-    background-image: url(/assets/img/front_card_bg.png);
+    background-image: url(/assets/img/skill-card-fe-dark.png);
 }
 #skill-card-back{
-    background-image: url(/assets/img/back_card_bg.png);
+    background-image: url(/assets/img/skill-card-be-dark.png);
 }
 #skill-card-soft{
-    background-image: url(/assets/img/soft_card_bg.png);
+    background-image: url(/assets/img/skill-card-soft-dark.png);
 }
 
 /* width */
